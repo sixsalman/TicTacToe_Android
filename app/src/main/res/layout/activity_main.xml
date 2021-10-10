@@ -51,13 +51,13 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1.4"
                 android:background="#FF7700"
+                android:onClick="btnNewAsX"
                 android:text="X"
                 android:textAlignment="center"
                 android:textAllCaps="false"
                 android:textColor="#FFFFFF"
                 android:textSize="18sp"
-                android:textStyle="bold"
-                android:onClick="btnNewAsX" />
+                android:textStyle="bold" />
 
             <Space
                 android:layout_width="match_parent"

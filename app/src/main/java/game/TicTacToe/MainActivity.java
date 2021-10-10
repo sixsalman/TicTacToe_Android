@@ -13,10 +13,10 @@ import java.util.Iterator;
 
 public class MainActivity extends AppCompatActivity {
 
-    private static Button[] btn = new Button[9];
-    private static String comp;
-    private static String player;
-    private static HashSet<Integer> empSpots = new HashSet<>(9);
+    private Button[] btn = new Button[9];
+    private String comp;
+    private String player;
+    private HashSet<Integer> empSpots = new HashSet<>(9);
     private TextView txtWinner;
     private boolean end = true;
 
@@ -146,7 +146,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    private static void compTurn() {
+    private void compTurn() {
 
         if ((btn[0].getText().equals(player) && btn[2].getText().equals(player) ||
                 btn[0].getText().equals(comp) && btn[2].getText().equals(comp)) &&
@@ -294,7 +294,7 @@ public class MainActivity extends AppCompatActivity {
             checkDraw();
     }
 
-    private static boolean checkWin(String sign) {
+    private boolean checkWin(String sign) {
 
         if (btn[0].getText().equals(sign) && btn[1].getText().equals(sign) &&
                 btn[2].getText().equals(sign)) {
@@ -350,7 +350,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    private static void highlightBoxes (int i, int j, int k) {
+    private void highlightBoxes (int i, int j, int k) {
 
         btn[i].setBackgroundColor(Color.parseColor("#FFFFFFFF"));
         btn[i].setTextColor(Color.parseColor("#FF9800"));
